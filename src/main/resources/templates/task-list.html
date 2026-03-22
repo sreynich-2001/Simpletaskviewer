@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Simple Task Viewer</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+
+<h1>Task List</h1>
+
+<h2>Add Task</h2>
+
+<form th:action="@{/tasks/add}" method="post">
+    <input type="text" name="title" placeholder="Enter task" required>
+    <button type="submit">Add</button>
+</form>
+
+
+<hr>
+
+<h2>Tasks</h2>
+>
+<table border="1">
+
+    <tr>
+        <th>ID</th>
+        <th>Task</th>
+        <th>Delete</th>
+    </tr>
+
+    <tr th:each="task : ${tasks}">
+
+        <td th:text="${task.id}"></td>
+
+        <td th:text="${task.title}"></td>
+
+        <td>
+            <form th:action="@{/tasks/delete}" method="post">
+                <input type="hidden" name="id" th:value="${task.id}">
+                <button type="submit">Delete</button>
+            </form>
+        </td>
+
+    </tr>
+
+</table>
+
+</body>
+</html>
