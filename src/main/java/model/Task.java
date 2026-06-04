@@ -4,6 +4,8 @@ package model;
 //1つのタスクの情報を保持する
 public class Task {
     
+    // キムリンGit練習
+
     //タスクのID(タスクを識別するための番号)
     private int id;
 
