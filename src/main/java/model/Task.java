@@ -5,6 +5,7 @@ package model;
 public class Task {
     
     // キムリンGit練習
+    // キムリン練習２回目
 
     //タスクのID(タスクを識別するための番号)
     private int id;
