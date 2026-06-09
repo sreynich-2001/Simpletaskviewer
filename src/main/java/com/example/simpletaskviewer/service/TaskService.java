@@ -1,5 +1,5 @@
 package com.example.simpletaskviewer.service;
-
+// 練習
 // Taskクラスを使うためのimport（タスクのデータを表すクラス）
 import model.Task;
 
