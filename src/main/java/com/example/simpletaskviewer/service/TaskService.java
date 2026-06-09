@@ -1,5 +1,4 @@
 package com.example.simpletaskviewer.service;
-// Gitコミット練習１回目失敗
 
 // Taskクラスを使うためのimport（タスクのデータを表すクラス）
 import model.Task;
